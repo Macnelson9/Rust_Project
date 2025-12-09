@@ -1,9 +1,9 @@
 [package]
-name = "bitcoin-explore"  # NEW: Users install with `cargo install bitcoin-explore`
+name = "regtest-block-explorer"  
 version = "0.1.0"
 edition = "2024"
 description = "A CLI tool for indexing Bitcoin regtest blocks via RPC and serving a block explorer API."
-authors = ["Uche Ofatu <ucheofatu@gmail.com>, Nmesoma Enyi"]  # Replace with your info
+authors = ["Uche Ofatu <ucheofatu@gmail.com>, Nmesoma Enyi"]  
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Macnelson9/Rust_Project"
 keywords = ["bitcoin", "regtest", "cli", "block-explorer"]
@@ -23,8 +23,8 @@ env_logger = "0.11.8"
 log = "0.4.29"
 reqwest = { version = "0.12", features = ["json"] }
 bitcoin-crypto-toolkit = "0.1.0"
-clap = { version = "4.0", features = ["derive"] }  # NEW: For CLI
+clap = { version = "4.0", features = ["derive"] }  
 
 [[bin]]
-name = "bitcoin-explore"  # Main binary name
+name = "regtest-block-explorer"  
 path = "src/main.rs"

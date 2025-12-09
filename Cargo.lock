@@ -357,26 +357,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "bitcoin-explore"
-version = "0.1.0"
-dependencies = [
- "actix-rt",
- "actix-web",
- "anyhow",
- "bitcoin",
- "bitcoin-crypto-toolkit",
- "clap",
- "env_logger",
- "hex",
- "log",
- "reqwest",
- "rusqlite",
- "serde",
- "serde_json",
- "tokio",
-]
-
-[[package]]
 name = "bitcoin-internals"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1648,6 +1628,26 @@ name = "regex-syntax"
 version = "0.8.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7a2d987857b319362043e95f5353c0535c1f58eec5336fdfcf626430af7def58"
+
+[[package]]
+name = "regtest-block-explorer"
+version = "0.1.0"
+dependencies = [
+ "actix-rt",
+ "actix-web",
+ "anyhow",
+ "bitcoin",
+ "bitcoin-crypto-toolkit",
+ "clap",
+ "env_logger",
+ "hex",
+ "log",
+ "reqwest",
+ "rusqlite",
+ "serde",
+ "serde_json",
+ "tokio",
+]
 
 [[package]]
 name = "reqwest"
